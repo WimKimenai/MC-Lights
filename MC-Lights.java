@@ -73,8 +73,8 @@ public class mc-lights extends JavaPlugin
             final String line = new BufferedReader(new InputStreamReader(httpURLConnection.getInputStream())).readLine();
             if (line.length() <= 7 && !line.equals(this.getDescription().getVersion())) {
                 this.old = true;
-                consoleSender.sendMessage("§b A new version of mc-lights is available here: ");
-                consoleSender.sendMessage("§3 https://www.spigotmc.org/resources/mc-lights.58234/");
+                consoleSender.sendMessage("§b A new version is available");
+                consoleSender.sendMessage("§3 Please refer to the Dropbox/");
             }
         }
         catch (Exception ex2) {}
